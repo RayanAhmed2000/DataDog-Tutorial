@@ -16,7 +16,7 @@
 - It will ask for details then sources you want to monitor
 - after that select your OS and it will give a command with a key to install datadog-agent
 ```
-DD_API_KEY=f941f7d37aad5df80eb995e8216d0e16 DD_SITE="us5.datadoghq.com" bash -c "$(curl -L https://install.datadoghq.com/scripts/install_script_agent7.sh)"
+DD_API_KEY=f941f7d372387468293460eb995e8216d0e16 DD_SITE="us5.datadoghq.com" bash -c "$(curl -L https://install.datadoghq.com/scripts/install_script_agent7.sh)"
 ```
 - The agent will automatically connect to your datadog cloud account and you will be prompted with a message "Agent is running successfully"
 - After that click on finish and youll be prompted to your dashboard
@@ -30,7 +30,17 @@ DD_API_KEY=f941f7d37aad5df80eb995e8216d0e16 DD_SITE="us5.datadoghq.com" bash -c 
 - Trace (APM / Synthetic Monitoring)
 
 
-
+# Hands - on
+- Go to infra
+- There youll see your ubuntu machine
+- Go to metrics youll see CPU memory and other metrics
+- Process section is empty (Not able to fetch processes)
+- Remember for any metric not showing or not able to fetch means we need to modify the conf file
+```
+vim /etc/datadog-agent/datadog.yaml
+```
+- Inside the file uncomment the process code chunck and set False to True
+- 
 
 
 
