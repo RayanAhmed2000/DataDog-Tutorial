@@ -40,7 +40,13 @@ DD_API_KEY=f941f7d372387468293460eb995e8216d0e16 DD_SITE="us5.datadoghq.com" bas
 vim /etc/datadog-agent/datadog.yaml
 ```
 - Inside the file uncomment the process code chunck and set False to True
-- 
+
+# Integrate more mahines / Install agents on other servers and monitor them
+- Go to integrations
+- Select platform/ technology and install agent
+
+# Did You know?
+- Datadog offers approximately 600+ integrations with various services, platforms, and technologies.
 
 
 
