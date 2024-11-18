@@ -44,9 +44,15 @@ vim /etc/datadog-agent/datadog.yaml
 # Integrate more mahines / Install agents on other servers and monitor them
 - Go to integrations
 - Select platform/ technology and install agent
+- Till now we were just monitoring our server/machine on which we installed datadog agent
+- What if we want to monitor some technology like docker or apache running on our same server
+- First install apache on your server
+- Go to integrations > Search apache
+- 
 
 # Did You know?
 - Datadog offers approximately 600+ integrations with various services, platforms, and technologies.
+
 
 
 
