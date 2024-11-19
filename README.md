@@ -48,13 +48,24 @@ vim /etc/datadog-agent/datadog.yaml
 - What if we want to monitor some technology like docker or apache running on our same server
 - First install apache on your server
 - Go to integrations > Search apache
-- 
+- Make changes in the apache conf file on your server (see tutorial from devopsschool.com)
+- Apache server metrics will be exposed on 
+```
+http://52.66.253.32/server-status?refresh=1
+```
 
 # Did You know?
 - Datadog offers approximately 600+ integrations with various services, platforms, and technologies.
 
-
-
+# In General How to integrate?
+- There is a directory in /etc/datadog-agent which already contains conf files of imp tools like docker karpenter etc
+```
+/etc/datadog-agent/conf.d/docker.d
+```
+- On datadog platform goto integrations then search tool
+- Navigate to configure tab
+- Datadog will ask you to got to the above directory and make changes in the yaml of the specific tool you want to monitor
+- then that tool will start sending the metrics to datadog agent
 
 
 
