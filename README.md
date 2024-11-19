@@ -2,9 +2,11 @@
 - cloud-based monitoring and observability platform (Cloud Monitoring as a service)
 - APM monitoring (Application Performance Monitoring using open tracing and error tracking)
 - RUM (Real user Monitoring - Tracks end-user interactions with web applications, helping you understand user experience and performance issues)
-- Log monitoring 
+- Log monitoring
+- OBservability Platform (M.E.L.T)
+- Metrices + Events + Logs + Trace(APM + Synthetic + RUM)
+- Alerts and Dashboard
 - particularly popular for monitoring cloud-native, microservices, and containerized applications
-- Setup alerting and dashboards
 
 # How it works
 - For APM monitoring an application code changes are made in nginx or tomcat or whatever we want to monitor which creates an agent within the application
@@ -21,7 +23,8 @@ DD_API_KEY=f941f7d372387468293460eb995e8216d0e16 DD_SITE="us5.datadoghq.com" bas
 - The agent will automatically connect to your datadog cloud account and you will be prompted with a message "Agent is running successfully"
 - After that click on finish and youll be prompted to your dashboard
 
-# Extra
+# What is Trace and Synthetic Monitoring
+- Trace is basically creating a real user which is going to connect to the application and we want to record its experience.
 - Synthetic Monitoring, also known as synthetic testing or active monitoring, is a technique used to monitor the performance and availability of applications, websites, and APIs by simulating user interactions. Instead of relying on real user data, it involves running scripted tests (synthetic tests) at regular intervals from different locations around the world to check the health and performance of your services.
 
 # Basics types of monitoring / Observability (In Bracket is the name on Datadog Dashboard)
